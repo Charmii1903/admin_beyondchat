@@ -1,8 +1,8 @@
 import { useState, useEffect } from "react";
 import { BrowserRouter as Router, Routes, Route, Navigate } from "react-router-dom";
-import Welcome from "./pages/welcome";
-import Login from "./components/Auth/Login";
-import Dashboard from './pages/Dasboard';
+import Welcome from "./pages/Welcome.jsx";
+import Login from "./components/Auth/Login.jsx";
+import Dashboard from './pages/Dasboard.jsx';
 
 export default function App() {
   const [isLoggedIn, setIsLoggedIn] = useState(!!localStorage.getItem("auth"));
